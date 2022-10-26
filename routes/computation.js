@@ -19,3 +19,5 @@ router.get(`/`,function(req,res,next){
 res.render('computation', { title: `f(${x}) is ${Math.log(x)}` });
 res.end();
 });
+
+module.exports = router;
