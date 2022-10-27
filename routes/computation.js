@@ -12,12 +12,6 @@ router.get('/',function(req,res,next) {
     }
 
   res.render('computation', { values: `f(${x}) is ${Math.log(x)}` });
-})
-
-/* GET home page. */
-router.get(`/`,function(req,res,next){
-res.render('computation', { values: `f(${x}) is ${Math.log(x)}` });
-res.end();
 });
 
 module.exports = router;
